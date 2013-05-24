@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Airfoil - powered by Backlift</title>
+
+    {{$ styles}}
+    
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+  <body>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=253124151396084";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="header" style="position: relative; width: 100%; overflow: hidden">
+    <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; text-align: center;">
+      <canvas id="headercanvas" width="1600" height="500"></canvas>
+    </div>
+    
+    <div class="container" style="position: relative; z-index: 2">
+
+      <div class="row" id="nav">
+        <div class="span12 text-center"><h1>Airfoil <i class="icon-plane"></i> </h1></div>
+      </div>
+
+      <div class="row" id="ingress">
+        
+        <div class="span12 text-center">
+
+          {{$ test default }}
+          <h2>Launch and A<span style="font-weight: 100">/</span>B test websites using only HTML</h2>
+          <p class="ingress">Download template to Dropbox, edit layout and variants with any text editor and publish instantly via Backlift.</p>
+          {{$ endtest}}
+
+          {{$ test control }}
+          <h2>A<span style="font-weight: 100">/</span>B testable landing pages on your Dropbox</h2>
+          <p class="ingress">No online WYSIWYG editors. Just write plain HTML and CSS, we'll take care of tracking and server magic</p>
+          {{$ endtest}}
+
+          <form class="form-inline signupform">
+            <input type="text" placeholder="Your email" class="span5" name="email" />
+            <button class="btn btn-primary" type="submit">Tell me more</button>
+            <p class="muted" style="margin: 20px 0;">We'll be launching in May 2013. Be the first one to know!</p>
+            <!--<p class="muted" style="margin: 20px 0; font-size: 0.9em; font-weight: 200">get started by creating an app or</p>
+            <p><a class="btn btn-link" style="padding: 0"><i class="icon-play-sign"></i> Watch Demo</a></p>-->
+          </form>
+
+
+
+        </div>
+      </div> <!-- ingress -->
+
+    </div>
+    </div> <!-- header -->
+
+    <div id="middle">
+
+      <div class="container">
+        <div class="row">
+
+        <!--  <div class="span4"><h4>1. Edit HTML in dropbox</h4></div>
+          <div class="span4"><h4>2. Published instantly</h4></div>
+          <div class="span4"><h4>3. Check out results</h4></div> -->
+
+          <h3 class="span12">Edit files in Dropbox</h3>
+
+          <div class="span12 text-center">
+            <p>No online WYSIWYG editors! Use your favorite desktop tools to edit plain HTML and CSS. You have full control over the design. Don't feel designery? Just drop in a theme from <a href="http://themeforest.net/category/marketing/landing-pages">Themeforest</a>.</p>
+          </div>
+
+        </div> <!-- row -->
+      </div> <!--container -->
+
+      <div class="container">
+        <div class="row">
+
+        <!--  <div class="span4"><h4>1. Edit HTML in dropbox</h4></div>
+          <div class="span4"><h4>2. Published instantly</h4></div>
+          <div class="span4"><h4>3. Check out results</h4></div> -->
+
+          <h3 class="span12">Deploy via Backlift</h3>
+
+          <div class="span12 text-center">
+            <p>Launch your site in just minutes. Backlift creates an Airfoil template in your Dropbox and all changes will be instantly synchronized to a live website.</p>
+          </div>
+
+        </div> <!-- row -->
+      </div> <!--container -->
+
+      <div class="container">
+        <div class="row">
+
+        <!--  <div class="span4"><h4>1. Edit HTML in dropbox</h4></div>
+          <div class="span4"><h4>2. Published instantly</h4></div>
+          <div class="span4"><h4>3. Check out results</h4></div> -->
+
+          <h3 class="span12">Track results with a dashboard</h3>
+
+          <div class="span12 text-center">
+            <p>Visitors and conversions are tracked automatically. Each Airfoil site comes with a dashboard displaying key metrics and signups.</p>
+          </div>
+
+        </div> <!-- row -->
+      </div> <!--container -->
+
+    </div>  <!-- /middle -->
+  
+    <div id="secondcreate">
+      <div class="container">
+        <div class="row">
+          <div class="span12 text-center">
+            <!--<h4>Get started now by creating an app. It's free!</h4>-->
+            <h4>We'll be launching in May 2013. Be the first one to know!</h4>
+            <form class="form-inline signupform">
+                  <input type="text" placeholder="Email" class="span5" name="email" />
+                  <button class="btn btn-primary" type="submit">Send</button>
+                  <!--<p><a class="btn btn-link" style="padding: 0; margin-top: 20px"><i class="icon-play-sign"></i> Watch Demo</a></p>-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="span12 text-center">
+            <h4>Share if you care <i class="icon-heart"></i></h4>
+            <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="backliftapp">Tweet</a>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <ul id="footernav" class="unstyled text-center">
+              <li><a href="/">Airfoil</a></li>
+              <li><a href="http://backlift.com">Backlift</a></li>
+              <!--<li><a href="#">Documentation</a></li>
+              <li><a href="#">Terms of Service</a></li>-->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    {{$ scripts}}
+
+    <script type="text/javascript">
+      
+      $(document).ready(function(){
+      
+        var data = {
+          labels : ["","","","","","",""],
+          datasets : [
+            {
+              strokeColor : "rgba(192,57,43, 0.1)",
+              data : [13,21,19,23,26,23,22]
+            },
+            {
+              strokeColor : "rgba(141,128,285,0.1)",
+              data : [15,22,20,19,30,35,37]
+            }
+          ]
+        }
+        
+        $('#headercanvas').attr('width', $('#header').width())
+        $('#headercanvas').attr('height', $('#header').height())
+        
+        ctx = document.getElementById("headercanvas").getContext("2d");
+        
+        new Chart(ctx).Line(data, {
+          'scaleShowLabels': false,
+          'scaleShowGridLines': false,
+          'datasetFill': false,
+          'datasetStrokeWidth': 5,
+          'datasetStroke': false,
+          'pointDot': false,
+          });
+
+      })
+
+    </script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  </body>
+</html>
